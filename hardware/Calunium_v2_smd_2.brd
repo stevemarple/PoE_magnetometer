@@ -499,44 +499,6 @@
 <vertex x="3.81" y="-3.175"/>
 </polygon>
 </package>
-<package name="SOT23-3-ROTATED">
-<wire x1="0.7112" y1="0.6096" x2="0.7112" y2="1.4986" width="0.1524" layer="21"/>
-<wire x1="-0.1016" y1="-1.4986" x2="0.7112" y2="-1.4986" width="0.1524" layer="21"/>
-<wire x1="0.7112" y1="-1.4986" x2="0.7112" y2="-0.6096" width="0.1524" layer="21"/>
-<wire x1="0.7112" y1="1.4986" x2="0.3048" y2="1.4986" width="0.1524" layer="21"/>
-<wire x1="0.3048" y1="1.4986" x2="-0.1016" y2="1.4986" width="0.1524" layer="21"/>
-<wire x1="-0.7112" y1="0.4064" x2="-0.7112" y2="-0.4064" width="0.1524" layer="21"/>
-<wire x1="0.3048" y1="1.4986" x2="-0.0254" y2="1.1938" width="0.1524" layer="21" curve="-94.994823"/>
-<wire x1="-0.7112" y1="-1.4986" x2="0.7112" y2="-1.4986" width="0" layer="51"/>
-<wire x1="0.7112" y1="-1.4986" x2="0.7112" y2="-0.254" width="0" layer="51"/>
-<wire x1="0.7112" y1="1.4986" x2="0.3048" y2="1.4986" width="0" layer="51"/>
-<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51"/>
-<wire x1="-0.3048" y1="1.4986" x2="-0.7112" y2="1.4986" width="0" layer="51"/>
-<wire x1="-0.7112" y1="1.4986" x2="-0.7112" y2="1.27" width="0" layer="51"/>
-<wire x1="-0.7112" y1="1.27" x2="-0.7112" y2="0.762" width="0" layer="51"/>
-<wire x1="-0.7112" y1="0.762" x2="-0.7112" y2="-0.762" width="0" layer="51"/>
-<wire x1="-0.7112" y1="1.27" x2="-1.2446" y2="1.27" width="0" layer="51"/>
-<wire x1="-1.2446" y1="1.27" x2="-1.2446" y2="0.762" width="0" layer="51"/>
-<wire x1="-1.2446" y1="0.762" x2="-0.7112" y2="0.762" width="0" layer="51"/>
-<wire x1="-0.7112" y1="-1.4986" x2="-0.7112" y2="-1.27" width="0" layer="51"/>
-<wire x1="-0.7112" y1="-1.27" x2="-0.7112" y2="-0.762" width="0" layer="51"/>
-<wire x1="-0.7112" y1="-0.762" x2="-1.2446" y2="-0.762" width="0" layer="51"/>
-<wire x1="-1.2446" y1="-0.762" x2="-1.2446" y2="-1.27" width="0" layer="51"/>
-<wire x1="-1.2446" y1="-1.27" x2="-0.7112" y2="-1.27" width="0" layer="51"/>
-<wire x1="0.7112" y1="-0.254" x2="0.7112" y2="0.254" width="0" layer="51"/>
-<wire x1="0.7112" y1="0.254" x2="0.7112" y2="1.4986" width="0" layer="51"/>
-<wire x1="0.7112" y1="-0.254" x2="1.2446" y2="-0.254" width="0" layer="51"/>
-<wire x1="1.2446" y1="-0.254" x2="1.2446" y2="0.254" width="0" layer="51"/>
-<wire x1="1.2446" y1="0.254" x2="0.7112" y2="0.254" width="0" layer="51"/>
-<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51" curve="-180"/>
-<smd name="1" x="-1.016" y="1.016" dx="1.3208" dy="0.5588" layer="1"/>
-<smd name="2" x="-1.016" y="-1.016" dx="1.3208" dy="0.5588" layer="1"/>
-<smd name="3" x="1.016" y="0" dx="1.3208" dy="0.5588" layer="1"/>
-<text x="-1.8542" y="1.4478" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-<text x="-1.8542" y="1.4478" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<text x="-3.4544" y="2.54" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-3.4544" y="-4.445" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
-</package>
 <package name="TO-92">
 <description>&lt;b&gt;TO 92&lt;/b&gt;</description>
 <wire x1="-2.0946" y1="-1.651" x2="-1.016" y2="2.5485" width="0.2032" layer="21" curve="-110"/>
@@ -1536,14 +1498,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="72.39" y="3.81" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="72.39" y="1.27" size="1.27" layer="27"/>
 </element>
-<element name="Q1" library="SteveMarple" package="SOT23-3-ROTATED" value="2N7002" x="12.7" y="72.39" smashed="yes" rot="R270">
+<element name="Q1" library="SteveMarple" package="SOT23-3-HAND" value="BSS138" x="12.7" y="72.39" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.2075" y="69.85" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="10.795" y="69.85" size="1.27" layer="27" ratio="10" rot="R90"/>
-<attribute name="PACKAGE" value="SOT-23-3" x="12.7" y="72.39" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="25R5679" x="12.7" y="72.39" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="2N7002-7-F" x="12.7" y="72.39" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SUPPLIER" value="DIODES INC." x="12.7" y="72.39" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="1713823" x="12.7" y="72.39" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="IC2" library="SteveMarple" package="SO08" value="DS1338" x="90.17" y="20.32" smashed="yes">
 <attribute name="NAME" x="85.725" y="24.765" size="1.27" layer="25" ratio="10"/>
@@ -1822,8 +1779,8 @@ design rules under a new name.</description>
 <wire x1="22.86" y1="66.675" x2="26.625" y2="62.865" width="0" layer="19" extent="1-1"/>
 <wire x1="18.46" y1="62.865" x2="22.86" y2="66.675" width="0" layer="19" extent="1-1"/>
 <wire x1="26.416" y1="76.2" x2="22.86" y2="66.675" width="0" layer="19" extent="1-1"/>
-<wire x1="11.684" y1="73.406" x2="18.46" y2="62.865" width="0" layer="19" extent="1-1"/>
-<wire x1="11.201" y1="76.2" x2="11.684" y2="73.406" width="0" layer="19" extent="1-1"/>
+<wire x1="11.684" y1="74.041" x2="18.46" y2="62.865" width="0" layer="19" extent="1-1"/>
+<wire x1="11.201" y1="76.2" x2="11.684" y2="74.041" width="0" layer="19" extent="1-1"/>
 <wire x1="4.445" y1="74.295" x2="11.201" y2="76.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC" class="1">
@@ -1903,7 +1860,7 @@ design rules under a new name.</description>
 <signal name="N$4">
 <contactref element="LED1" pad="K"/>
 <contactref element="Q1" pad="3"/>
-<wire x1="3.81" y1="21.59" x2="12.7" y2="71.374" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="21.59" x2="12.7" y2="70.739" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="13(SCK)">
 <contactref element="IC4" pad="8"/>
@@ -1916,7 +1873,7 @@ design rules under a new name.</description>
 <wire x1="35.56" y1="59.69" x2="63.5" y2="53.34" width="0" layer="19" extent="1-1"/>
 <wire x1="28.956" y1="76.2" x2="35.56" y2="59.69" width="0" layer="19" extent="1-1"/>
 <wire x1="14.199" y1="76.2" x2="28.956" y2="76.2" width="0" layer="19" extent="1-1"/>
-<wire x1="13.716" y1="73.406" x2="14.199" y2="76.2" width="0" layer="19" extent="1-1"/>
+<wire x1="13.716" y1="74.041" x2="14.199" y2="76.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBATT">
 <contactref element="BAT1" pad="1"/>

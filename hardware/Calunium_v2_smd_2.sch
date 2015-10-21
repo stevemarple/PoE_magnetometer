@@ -2266,44 +2266,6 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <vertex x="3.81" y="-3.175"/>
 </polygon>
 </package>
-<package name="SOT23-3-ROTATED">
-<wire x1="0.7112" y1="0.6096" x2="0.7112" y2="1.4986" width="0.1524" layer="21"/>
-<wire x1="-0.1016" y1="-1.4986" x2="0.7112" y2="-1.4986" width="0.1524" layer="21"/>
-<wire x1="0.7112" y1="-1.4986" x2="0.7112" y2="-0.6096" width="0.1524" layer="21"/>
-<wire x1="0.7112" y1="1.4986" x2="0.3048" y2="1.4986" width="0.1524" layer="21"/>
-<wire x1="0.3048" y1="1.4986" x2="-0.1016" y2="1.4986" width="0.1524" layer="21"/>
-<wire x1="-0.7112" y1="0.4064" x2="-0.7112" y2="-0.4064" width="0.1524" layer="21"/>
-<wire x1="0.3048" y1="1.4986" x2="-0.0254" y2="1.1938" width="0.1524" layer="21" curve="-94.994823"/>
-<wire x1="-0.7112" y1="-1.4986" x2="0.7112" y2="-1.4986" width="0" layer="51"/>
-<wire x1="0.7112" y1="-1.4986" x2="0.7112" y2="-0.254" width="0" layer="51"/>
-<wire x1="0.7112" y1="1.4986" x2="0.3048" y2="1.4986" width="0" layer="51"/>
-<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51"/>
-<wire x1="-0.3048" y1="1.4986" x2="-0.7112" y2="1.4986" width="0" layer="51"/>
-<wire x1="-0.7112" y1="1.4986" x2="-0.7112" y2="1.27" width="0" layer="51"/>
-<wire x1="-0.7112" y1="1.27" x2="-0.7112" y2="0.762" width="0" layer="51"/>
-<wire x1="-0.7112" y1="0.762" x2="-0.7112" y2="-0.762" width="0" layer="51"/>
-<wire x1="-0.7112" y1="1.27" x2="-1.2446" y2="1.27" width="0" layer="51"/>
-<wire x1="-1.2446" y1="1.27" x2="-1.2446" y2="0.762" width="0" layer="51"/>
-<wire x1="-1.2446" y1="0.762" x2="-0.7112" y2="0.762" width="0" layer="51"/>
-<wire x1="-0.7112" y1="-1.4986" x2="-0.7112" y2="-1.27" width="0" layer="51"/>
-<wire x1="-0.7112" y1="-1.27" x2="-0.7112" y2="-0.762" width="0" layer="51"/>
-<wire x1="-0.7112" y1="-0.762" x2="-1.2446" y2="-0.762" width="0" layer="51"/>
-<wire x1="-1.2446" y1="-0.762" x2="-1.2446" y2="-1.27" width="0" layer="51"/>
-<wire x1="-1.2446" y1="-1.27" x2="-0.7112" y2="-1.27" width="0" layer="51"/>
-<wire x1="0.7112" y1="-0.254" x2="0.7112" y2="0.254" width="0" layer="51"/>
-<wire x1="0.7112" y1="0.254" x2="0.7112" y2="1.4986" width="0" layer="51"/>
-<wire x1="0.7112" y1="-0.254" x2="1.2446" y2="-0.254" width="0" layer="51"/>
-<wire x1="1.2446" y1="-0.254" x2="1.2446" y2="0.254" width="0" layer="51"/>
-<wire x1="1.2446" y1="0.254" x2="0.7112" y2="0.254" width="0" layer="51"/>
-<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51" curve="-180"/>
-<smd name="1" x="-1.016" y="1.016" dx="1.3208" dy="0.5588" layer="1"/>
-<smd name="2" x="-1.016" y="-1.016" dx="1.3208" dy="0.5588" layer="1"/>
-<smd name="3" x="1.016" y="0" dx="1.3208" dy="0.5588" layer="1"/>
-<text x="-1.8542" y="1.4478" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-<text x="-1.8542" y="1.4478" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<text x="-3.4544" y="2.54" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-3.4544" y="-4.445" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
-</package>
 <package name="TO-92">
 <description>&lt;b&gt;TO 92&lt;/b&gt;</description>
 <wire x1="-2.0946" y1="-1.651" x2="-1.016" y2="2.5485" width="0.2032" layer="21" curve="-110"/>
@@ -5553,26 +5515,20 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="2N7002" prefix="U">
-<description>N-CHANNEL ENHANCEMENT MODE FIELD EFFECT TRANSISTOR</description>
+<deviceset name="BSS138">
+<description>&lt;b&gt;BSS138 FET&lt;/b&gt;</description>
 <gates>
-<gate name="A" symbol="2N7000" x="0" y="0"/>
+<gate name="G$1" symbol="2N7000" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT23-3-ROTATED">
+<device name="SOT23-3-HAND" package="SOT23-3-HAND">
 <connects>
-<connect gate="A" pin="D" pad="3"/>
-<connect gate="A" pin="G" pad="1"/>
-<connect gate="A" pin="S" pad="2"/>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MPN" value="2N7002-7-F" constant="no"/>
-<attribute name="OC_FARNELL" value="1713823" constant="no"/>
-<attribute name="OC_NEWARK" value="25R5679" constant="no"/>
-<attribute name="PACKAGE" value="SOT-23-3" constant="no"/>
-<attribute name="SUPPLIER" value="DIODES INC." constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -7036,7 +6992,7 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 </part>
 <part name="FRAME1" library="SteveMarple" deviceset="FRAME-A3" device=""/>
 <part name="X3" library="SteveMarple" deviceset="USB" device="PTH" value="USB"/>
-<part name="Q1" library="SteveMarple" deviceset="2N7002" device=""/>
+<part name="Q1" library="SteveMarple" deviceset="BSS138" device="SOT23-3-HAND" value="BSS138"/>
 <part name="IC2" library="SteveMarple" deviceset="DS1307" device="SO08" value="DS1338"/>
 <part name="LED1" library="SparkFun" deviceset="LED" device="3MM" value="D13"/>
 <part name="LED2" library="SparkFun" deviceset="LED" device="3MM" value="PWR"/>
@@ -7191,7 +7147,7 @@ Swap MCP1702  (3V3 and 5V) for SMD</text>
 </instance>
 <instance part="FRAME1" gate="G$1" x="-172.72" y="-76.2"/>
 <instance part="X3" gate="G$1" x="-144.78" y="-20.32" smashed="yes" rot="MR0"/>
-<instance part="Q1" gate="A" x="185.42" y="132.08"/>
+<instance part="Q1" gate="G$1" x="185.42" y="132.08"/>
 <instance part="IC2" gate="G$1" x="142.24" y="66.04"/>
 <instance part="LED1" gate="G$1" x="185.42" y="142.24"/>
 <instance part="LED2" gate="G$1" x="137.16" y="124.46"/>
@@ -7368,7 +7324,7 @@ Swap MCP1702  (3V3 and 5V) for SMD</text>
 <wire x1="137.16" y1="0" x2="137.16" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="Q1" gate="A" pin="S"/>
+<pinref part="Q1" gate="G$1" pin="S"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="185.42" y1="127" x2="185.42" y2="119.38" width="0.1524" layer="91"/>
 </segment>
@@ -7724,7 +7680,7 @@ Swap MCP1702  (3V3 and 5V) for SMD</text>
 <net name="N$4" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
-<pinref part="Q1" gate="A" pin="D"/>
+<pinref part="Q1" gate="G$1" pin="D"/>
 </segment>
 </net>
 <net name="13(SCK)" class="0">
@@ -7734,7 +7690,7 @@ Swap MCP1702  (3V3 and 5V) for SMD</text>
 <pinref part="IC4" gate="G$1" pin="PCINT15/SCK_PB7"/>
 </segment>
 <segment>
-<pinref part="Q1" gate="A" pin="G"/>
+<pinref part="Q1" gate="G$1" pin="G"/>
 <wire x1="180.34" y1="129.54" x2="172.72" y2="129.54" width="0.1524" layer="91"/>
 <label x="165.1" y="129.54" size="1.778" layer="95" rot="MR0"/>
 <pinref part="R10" gate="G$1" pin="2"/>
