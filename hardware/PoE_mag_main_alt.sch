@@ -3959,6 +3959,43 @@ with only time−of−flight delays to consider."
 <wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="FET-N-TYPE">
+<wire x1="-1.778" y1="0.762" x2="-1.778" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="0" x2="-1.778" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="3.175" x2="-1.778" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="2.54" x2="-1.778" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="-1.905" x2="-1.778" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="-2.54" x2="-1.778" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.778" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="1.27" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0.508" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="2.54" x2="1.27" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="0.762" x2="1.778" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="0.508" x2="1.27" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0.508" x2="0.762" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="0.508" x2="0.508" y2="0.254" width="0.1524" layer="94"/>
+<circle x="0" y="-2.54" radius="0.3592" width="0" layer="94"/>
+<circle x="0" y="2.54" radius="0.3592" width="0" layer="94"/>
+<text x="-13.97" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-13.97" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<pin name="S" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="D" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="1.27" y="0.508"/>
+<vertex x="0.762" y="-0.254"/>
+<vertex x="1.778" y="-0.254"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-1.524" y="0"/>
+<vertex x="-0.508" y="0.762"/>
+<vertex x="-0.508" y="-0.762"/>
+</polygon>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRAME-A3" prefix="FRAME">
@@ -5487,6 +5524,43 @@ Simple 6 pin RJ11 jack. Commonly found on CAT3 devices and Microchip programmers
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FET-N-TYPE" prefix="Q" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="FET-N-TYPE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT23-3-HAND" package="SOT23-3-HAND">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT223" package="SOT223">
+<connects>
+<connect gate="G$1" pin="D" pad="2 4"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT223-HAND" package="SOT223-HAND">
+<connects>
+<connect gate="G$1" pin="D" pad="2 4"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7994,6 +8068,89 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 </deviceset>
 </devicesets>
 </library>
+<library name="fibox">
+<packages>
+<package name="FIBOX-PC-M-95-G">
+<hole x="0" y="50" drill="3.5"/>
+<hole x="0" y="-50" drill="3.5"/>
+<hole x="-50" y="-50" drill="3.5"/>
+<hole x="50" y="-50" drill="3.5"/>
+<hole x="-50" y="50" drill="3.5"/>
+<hole x="50" y="50" drill="3.5"/>
+<hole x="-95" y="0" drill="3.5"/>
+<hole x="95" y="0" drill="3.5"/>
+<hole x="-87.5" y="30" drill="3.5"/>
+<hole x="-87.5" y="-30" drill="3.5"/>
+<hole x="87.5" y="-30" drill="3.5"/>
+<hole x="87.5" y="30" drill="3.5"/>
+<wire x1="-98" y1="-65" x2="98" y2="-65" width="0.127" layer="51"/>
+<wire x1="-98" y1="65" x2="98" y2="65" width="0.127" layer="51"/>
+<wire x1="110" y1="53" x2="110" y2="-53" width="0.127" layer="51"/>
+<wire x1="-110" y1="53" x2="-110" y2="-53" width="0.127" layer="51"/>
+<wire x1="-98" y1="65" x2="-98" y2="61" width="0.127" layer="51"/>
+<wire x1="-98" y1="-61" x2="-98" y2="-65" width="0.127" layer="51"/>
+<wire x1="98" y1="65" x2="98" y2="61" width="0.127" layer="51"/>
+<wire x1="98" y1="-61" x2="98" y2="-65" width="0.127" layer="51"/>
+<wire x1="-110" y1="53" x2="-106" y2="53" width="0.127" layer="51"/>
+<wire x1="106" y1="53" x2="110" y2="53" width="0.127" layer="51"/>
+<wire x1="-110" y1="-53" x2="-106" y2="-53" width="0.127" layer="51"/>
+<wire x1="106" y1="-53" x2="110" y2="-53" width="0.127" layer="51"/>
+<wire x1="98" y1="61" x2="106" y2="53" width="0.127" layer="51" curve="90"/>
+<wire x1="-106" y1="53" x2="-98" y2="61" width="0.127" layer="51" curve="90"/>
+<wire x1="-98" y1="-61" x2="-106" y2="-53" width="0.127" layer="51" curve="90"/>
+<wire x1="106" y1="-53" x2="98" y2="-61" width="0.127" layer="51" curve="90"/>
+<circle x="95" y="0" radius="3.5" width="0" layer="40"/>
+<rectangle x1="94" y1="-10" x2="96" y2="10" layer="40"/>
+<circle x="-95" y="0" radius="3.5" width="0" layer="40"/>
+<rectangle x1="-96" y1="-10" x2="-94" y2="10" layer="40"/>
+<circle x="0" y="-50" radius="3.5" width="0" layer="40"/>
+<rectangle x1="-1" y1="-60" x2="1" y2="-40" layer="40" rot="R90"/>
+<circle x="0" y="50" radius="3.5" width="0" layer="40"/>
+<rectangle x1="-1" y1="40" x2="1" y2="60" layer="40" rot="R90"/>
+<circle x="50" y="50" radius="3.5" width="0" layer="40"/>
+<rectangle x1="49" y1="40" x2="51" y2="60" layer="40" rot="R90"/>
+<circle x="-50" y="50" radius="3.5" width="0" layer="40"/>
+<rectangle x1="-51" y1="40" x2="-49" y2="60" layer="40" rot="R90"/>
+<circle x="-50" y="-50" radius="3.5" width="0" layer="40"/>
+<rectangle x1="-51" y1="-60" x2="-49" y2="-40" layer="40" rot="R90"/>
+<circle x="50" y="-50" radius="3.5" width="0" layer="40"/>
+<rectangle x1="49" y1="-60" x2="51" y2="-40" layer="40" rot="R90"/>
+<circle x="87.5" y="30" radius="3.5" width="0" layer="40"/>
+<circle x="87.5" y="-30" radius="3.5" width="0" layer="40"/>
+<circle x="-87.5" y="30" radius="3.5" width="0" layer="40"/>
+<circle x="-87.5" y="-30" radius="3.5" width="0" layer="40"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BOX">
+<wire x1="-22.86" y1="2.54" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="22.86" y2="10.16" width="0.254" layer="94"/>
+<wire x1="22.86" y1="10.16" x2="7.62" y2="17.78" width="0.254" layer="94"/>
+<wire x1="7.62" y1="17.78" x2="-22.86" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="2.54" x2="-22.86" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-10.16" x2="-7.62" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-17.78" x2="22.86" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-2.54" x2="22.86" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="-17.78" width="0.254" layer="94"/>
+<text x="7.62" y="-15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BOX" prefix="BOX">
+<gates>
+<gate name="G$1" symbol="BOX" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="FIBOX-PC-M-95-G" package="FIBOX-PC-M-95-G">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8222,10 +8379,11 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="R20" library="SteveMarple" deviceset="RESISTOR" device="1206-HAND" value="1M"/>
 <part name="R21" library="SteveMarple" deviceset="RESISTOR" device="1206-HAND" value="330R"/>
 <part name="GND47" library="supply1" deviceset="GND" device=""/>
-<part name="Q2" library="SteveMarple" deviceset="BSS138" device="SOT23-3-HAND" value="BSS138"/>
 <part name="D4" library="SteveMarple" deviceset="DIODE" device="SOT23-1-3-HAND" value="BAS21"/>
 <part name="GND48" library="supply1" deviceset="GND" device=""/>
 <part name="X9" library="con-molex" deviceset="22-23-2021" device=""/>
+<part name="BOX1" library="fibox" deviceset="BOX" device="FIBOX-PC-M-95-G"/>
+<part name="Q3" library="SteveMarple" deviceset="FET-N-TYPE" device="SOT223-HAND" value="BUK98150-55A"/>
 </parts>
 <sheets>
 <sheet>
@@ -8237,11 +8395,12 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <instance part="R20" gate="G$1" x="88.9" y="172.72" rot="R90"/>
 <instance part="R21" gate="G$1" x="76.2" y="180.34"/>
 <instance part="GND47" gate="1" x="99.06" y="165.1"/>
-<instance part="Q2" gate="G$1" x="99.06" y="182.88"/>
 <instance part="D4" gate="G$1" x="106.68" y="182.88" rot="R90"/>
 <instance part="GND48" gate="1" x="88.9" y="165.1"/>
 <instance part="X9" gate="-1" x="101.6" y="200.66"/>
 <instance part="X9" gate="-2" x="101.6" y="198.12"/>
+<instance part="BOX1" gate="G$1" x="342.9" y="50.8"/>
+<instance part="Q3" gate="G$1" x="99.06" y="182.88"/>
 </instances>
 <busses>
 </busses>
@@ -8250,10 +8409,10 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <segment>
 <pinref part="GND47" gate="1" pin="GND"/>
 <wire x1="99.06" y1="167.64" x2="99.06" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="S"/>
 <junction x="99.06" y="177.8"/>
 <pinref part="D4" gate="G$1" pin="A"/>
 <wire x1="99.06" y1="177.8" x2="106.68" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
@@ -8262,23 +8421,23 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="Q2" gate="G$1" pin="D"/>
 <junction x="99.06" y="187.96"/>
 <wire x1="99.06" y1="187.96" x2="99.06" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="D4" gate="G$1" pin="C"/>
 <wire x1="106.68" y1="187.96" x2="99.06" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="X9" gate="-2" pin="S"/>
+<pinref part="Q3" gate="G$1" pin="D"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
 <pinref part="R21" gate="G$1" pin="2"/>
-<pinref part="Q2" gate="G$1" pin="G"/>
 <wire x1="81.28" y1="180.34" x2="88.9" y2="180.34" width="0.1524" layer="91"/>
 <junction x="88.9" y="180.34"/>
 <wire x1="88.9" y1="180.34" x2="93.98" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="R20" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="180.34" x2="88.9" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="G$1" pin="G"/>
 </segment>
 </net>
 <net name="8" class="0">
