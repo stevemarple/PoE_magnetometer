@@ -8083,8 +8083,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <attribute name="OPTION" value="Crystal or ceramic resonator. Max 12MHz for 3V3 operation."/>
 </part>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="D1" library="SteveMarple" deviceset="DIODE-SCHOTTKY" device="SOT23-1-3-HAND" value="BAT85"/>
-<part name="D2" library="SteveMarple" deviceset="DIODE-SCHOTTKY" device="SOT23-1-3-HAND" value="BAT85"/>
+<part name="D1" library="SteveMarple" deviceset="DIODE-SCHOTTKY" device="SOT23-1-3-HAND" value="BAS40"/>
+<part name="D2" library="SteveMarple" deviceset="DIODE-SCHOTTKY" device="SOT23-1-3-HAND" value="BAS40"/>
 <part name="C4" library="SteveMarple" deviceset="C-EU" device="1206-HAND" value="100p"/>
 <part name="R7" library="SteveMarple" deviceset="RESISTOR" device="1206-HAND" value="1k"/>
 <part name="C3" library="SteveMarple" deviceset="C-EU" device="1206-HAND" value="100n"/>
