@@ -8,24 +8,24 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="14" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -34,8 +34,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -43,17 +43,17 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -7891,6 +7891,87 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <circle x="87.5" y="-30" radius="3.5" width="0" layer="40"/>
 <circle x="-87.5" y="30" radius="3.5" width="0" layer="40"/>
 <circle x="-87.5" y="-30" radius="3.5" width="0" layer="40"/>
+<wire x1="96" y1="65" x2="98" y2="63" width="0.127" layer="51" curve="-90"/>
+<wire x1="96" y1="-65" x2="98" y2="-63" width="0.127" layer="51" curve="90"/>
+<wire x1="-96" y1="65" x2="-98" y2="63" width="0.127" layer="51" curve="90"/>
+<wire x1="-96" y1="-65" x2="-98" y2="-63" width="0.127" layer="51" curve="-90"/>
+<wire x1="-108" y1="53" x2="-110" y2="51" width="0.127" layer="51" curve="90"/>
+<wire x1="-108" y1="-53" x2="-110" y2="-51" width="0.127" layer="51" curve="-90"/>
+<wire x1="108" y1="-53" x2="110" y2="-51" width="0.127" layer="51" curve="90"/>
+<wire x1="108" y1="53" x2="110" y2="51" width="0.127" layer="51" curve="-90"/>
+</package>
+<package name="FIBOX-PC-M-95-G-POE-MAG">
+<hole x="0" y="50" drill="3.5"/>
+<hole x="0" y="-50" drill="3.5"/>
+<hole x="-50" y="-50" drill="3.5"/>
+<hole x="50" y="-50" drill="3.5"/>
+<hole x="-50" y="50" drill="3.5"/>
+<hole x="50" y="50" drill="3.5"/>
+<hole x="-95" y="0" drill="3.5"/>
+<hole x="95" y="0" drill="3.5"/>
+<hole x="-87.5" y="30" drill="3.5"/>
+<hole x="87.5" y="-30" drill="3.5"/>
+<hole x="87.5" y="30" drill="3.5"/>
+<wire x1="-98" y1="-65" x2="98" y2="-65" width="0.127" layer="51"/>
+<wire x1="-98" y1="65" x2="98" y2="65" width="0.127" layer="51"/>
+<wire x1="110" y1="53" x2="110" y2="-53" width="0.127" layer="51"/>
+<wire x1="-110" y1="53" x2="-110" y2="-53" width="0.127" layer="51"/>
+<wire x1="-98" y1="65" x2="-98" y2="61" width="0.127" layer="51"/>
+<wire x1="-98" y1="-61" x2="-98" y2="-65" width="0.127" layer="51"/>
+<wire x1="98" y1="65" x2="98" y2="61" width="0.127" layer="51"/>
+<wire x1="98" y1="-61" x2="98" y2="-65" width="0.127" layer="51"/>
+<wire x1="-110" y1="53" x2="-106" y2="53" width="0.127" layer="51"/>
+<wire x1="106" y1="53" x2="110" y2="53" width="0.127" layer="51"/>
+<wire x1="-110" y1="-53" x2="-106" y2="-53" width="0.127" layer="51"/>
+<wire x1="106" y1="-53" x2="110" y2="-53" width="0.127" layer="51"/>
+<wire x1="98" y1="61" x2="106" y2="53" width="0.127" layer="51" curve="90"/>
+<wire x1="-106" y1="53" x2="-98" y2="61" width="0.127" layer="51" curve="90"/>
+<wire x1="-98" y1="-61" x2="-106" y2="-53" width="0.127" layer="51" curve="90"/>
+<wire x1="106" y1="-53" x2="98" y2="-61" width="0.127" layer="51" curve="90"/>
+<circle x="95" y="0" radius="3.5" width="0" layer="40"/>
+<rectangle x1="94" y1="-10" x2="96" y2="10" layer="40"/>
+<circle x="-95" y="0" radius="3.5" width="0" layer="40"/>
+<rectangle x1="-96" y1="-10" x2="-94" y2="10" layer="40"/>
+<circle x="0" y="-50" radius="3.5" width="0" layer="40"/>
+<rectangle x1="-1" y1="-60" x2="1" y2="-40" layer="40" rot="R90"/>
+<circle x="0" y="50" radius="3.5" width="0" layer="42"/>
+<rectangle x1="-1" y1="40" x2="1" y2="60" layer="40" rot="R90"/>
+<circle x="50" y="50" radius="3.5" width="0" layer="40"/>
+<rectangle x1="49" y1="40" x2="51" y2="60" layer="40" rot="R90"/>
+<circle x="-50" y="50" radius="3.5" width="0" layer="40"/>
+<rectangle x1="-51" y1="40" x2="-49" y2="60" layer="40" rot="R90"/>
+<circle x="-50" y="-50" radius="3.5" width="0" layer="40"/>
+<rectangle x1="-51" y1="-60" x2="-49" y2="-40" layer="40" rot="R90"/>
+<circle x="50" y="-50" radius="3.5" width="0" layer="40"/>
+<rectangle x1="49" y1="-60" x2="51" y2="-40" layer="40" rot="R90"/>
+<circle x="87.5" y="30" radius="3.5" width="0" layer="40"/>
+<circle x="87.5" y="-30" radius="3.5" width="0" layer="40"/>
+<circle x="-87.5" y="30" radius="3.5" width="0" layer="40"/>
+<circle x="-87.5" y="-30" radius="3.5" width="0" layer="40"/>
+<wire x1="96" y1="65" x2="98" y2="63" width="0.127" layer="51" curve="-90"/>
+<wire x1="96" y1="-65" x2="98" y2="-63" width="0.127" layer="51" curve="90"/>
+<wire x1="-96" y1="65" x2="-98" y2="63" width="0.127" layer="51" curve="90"/>
+<wire x1="-96" y1="-65" x2="-98" y2="-63" width="0.127" layer="51" curve="-90"/>
+<wire x1="-108" y1="53" x2="-110" y2="51" width="0.127" layer="51" curve="90"/>
+<wire x1="-108" y1="-53" x2="-110" y2="-51" width="0.127" layer="51" curve="-90"/>
+<wire x1="108" y1="-53" x2="110" y2="-51" width="0.127" layer="51" curve="90"/>
+<wire x1="108" y1="53" x2="110" y2="51" width="0.127" layer="51" curve="-90"/>
+<wire x1="-95.25" y1="62.23" x2="41.91" y2="62.23" width="0" layer="20"/>
+<wire x1="41.91" y1="62.23" x2="41.91" y2="-62.23" width="0" layer="20"/>
+<wire x1="-107.95" y1="-50.8" x2="-107.95" y2="50.8" width="0" layer="20"/>
+<wire x1="-95.25" y1="60.96" x2="-106.68" y2="50.8" width="0" layer="20" curve="-90"/>
+<wire x1="-106.68" y1="-50.8" x2="-95.25" y2="-60.96" width="0" layer="20" curve="-90"/>
+<wire x1="-95.25" y1="-62.23" x2="41.91" y2="-62.23" width="0" layer="20"/>
+<wire x1="-95.25" y1="60.96" x2="-95.25" y2="62.23" width="0" layer="20"/>
+<wire x1="-106.68" y1="50.8" x2="-107.95" y2="50.8" width="0" layer="20"/>
+<wire x1="-106.68" y1="-50.8" x2="-107.95" y2="-50.8" width="0" layer="20"/>
+<wire x1="-95.25" y1="-62.23" x2="-95.25" y2="-60.96" width="0" layer="20"/>
+<circle x="-50" y="50" radius="3.5" width="0" layer="42"/>
+<circle x="-50" y="50" radius="3.5" width="0" layer="41"/>
+<circle x="0" y="50" radius="3.5" width="0" layer="41"/>
+<circle x="0" y="50" radius="3.5" width="0" layer="40"/>
+<circle x="-87.5" y="30" radius="3.5" width="0" layer="42"/>
+<circle x="-87.5" y="30" radius="3.5" width="0" layer="41"/>
 </package>
 </packages>
 <symbols>
@@ -7915,6 +7996,11 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 </gates>
 <devices>
 <device name="FIBOX-PC-M-95-G" package="FIBOX-PC-M-95-G">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="POE-MAG-150-150" package="FIBOX-PC-M-95-G-POE-MAG">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -8149,7 +8235,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="D4" library="SteveMarple" deviceset="DIODE" device="SOT23-1-3-HAND" value="BAS21"/>
 <part name="GND48" library="supply1" deviceset="GND" device=""/>
 <part name="X9" library="con-molex" deviceset="22-23-2021" device=""/>
-<part name="BOX1" library="fibox" deviceset="BOX" device="FIBOX-PC-M-95-G"/>
+<part name="BOX1" library="fibox" deviceset="BOX" device="POE-MAG-150-150" value="BOXPOE-MAG-150-150"/>
 <part name="Q3" library="SteveMarple" deviceset="FET-N-TYPE" device="SOT223-HAND" value="BUK98150-55A"/>
 </parts>
 <sheets>
