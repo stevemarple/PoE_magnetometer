@@ -7904,14 +7904,9 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <hole x="0" y="50" drill="3.5"/>
 <hole x="0" y="-50" drill="3.5"/>
 <hole x="-50" y="-50" drill="3.5"/>
-<hole x="50" y="-50" drill="3.5"/>
 <hole x="-50" y="50" drill="3.5"/>
-<hole x="50" y="50" drill="3.5"/>
 <hole x="-95" y="0" drill="3.5"/>
-<hole x="95" y="0" drill="3.5"/>
 <hole x="-87.5" y="30" drill="3.5"/>
-<hole x="87.5" y="-30" drill="3.5"/>
-<hole x="87.5" y="30" drill="3.5"/>
 <wire x1="-98" y1="-65" x2="98" y2="-65" width="0.127" layer="51"/>
 <wire x1="-98" y1="65" x2="98" y2="65" width="0.127" layer="51"/>
 <wire x1="110" y1="53" x2="110" y2="-53" width="0.127" layer="51"/>
@@ -7934,7 +7929,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <rectangle x1="-96" y1="-10" x2="-94" y2="10" layer="40"/>
 <circle x="0" y="-50" radius="3.5" width="0" layer="40"/>
 <rectangle x1="-1" y1="-60" x2="1" y2="-40" layer="40" rot="R90"/>
-<circle x="0" y="50" radius="3.5" width="0" layer="42"/>
+<circle x="0" y="50" radius="3.5" width="0" layer="39"/>
 <rectangle x1="-1" y1="40" x2="1" y2="60" layer="40" rot="R90"/>
 <circle x="50" y="50" radius="3.5" width="0" layer="40"/>
 <rectangle x1="49" y1="40" x2="51" y2="60" layer="40" rot="R90"/>
@@ -7966,12 +7961,24 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="-106.68" y1="50.8" x2="-107.95" y2="50.8" width="0" layer="20"/>
 <wire x1="-106.68" y1="-50.8" x2="-107.95" y2="-50.8" width="0" layer="20"/>
 <wire x1="-95.25" y1="-62.23" x2="-95.25" y2="-60.96" width="0" layer="20"/>
-<circle x="-50" y="50" radius="3.5" width="0" layer="42"/>
 <circle x="-50" y="50" radius="3.5" width="0" layer="41"/>
+<circle x="-50" y="50" radius="3.5" width="0" layer="39"/>
 <circle x="0" y="50" radius="3.5" width="0" layer="41"/>
 <circle x="0" y="50" radius="3.5" width="0" layer="40"/>
 <circle x="-87.5" y="30" radius="3.5" width="0" layer="42"/>
 <circle x="-87.5" y="30" radius="3.5" width="0" layer="41"/>
+<circle x="-50" y="-50" radius="3.5" width="0" layer="39"/>
+<circle x="-50" y="-50" radius="3.5" width="0" layer="41"/>
+<circle x="0" y="50" radius="3.5" width="0" layer="42"/>
+<circle x="-50" y="50" radius="3.5" width="0" layer="42"/>
+<circle x="-87.5" y="30" radius="3.5" width="0" layer="39"/>
+<circle x="-95" y="0" radius="3.5" width="0" layer="42"/>
+<circle x="-95" y="0" radius="3.5" width="0" layer="41"/>
+<circle x="-95" y="0" radius="3.5" width="0" layer="39"/>
+<circle x="-50" y="-50" radius="3.5" width="0" layer="42"/>
+<circle x="0" y="-50" radius="3.5" width="0" layer="39"/>
+<circle x="0" y="-50" radius="3.5" width="0" layer="42"/>
+<circle x="0" y="-50" radius="3.5" width="0" layer="41"/>
 </package>
 </packages>
 <symbols>
@@ -8340,6 +8347,8 @@ so that BJT could be used.</text>
 <text x="20.32" y="-66.04" size="2.54" layer="91">UART-USB converter</text>
 <text x="-149.86" y="200.66" size="3.81" layer="94">TODO
 Swap MCP1702  (3V3 and 5V) for SMD</text>
+<text x="-149.86" y="187.96" size="3.81" layer="94">TODO
+Add TO-220 option for LD-1117</text>
 </plain>
 <instances>
 <instance part="IC4" gate="G$1" x="22.86" y="35.56"/>
