@@ -3318,14 +3318,20 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <wire x1="2.794" y1="5.2324" x2="-2.794" y2="5.2324" width="0.254" layer="51"/>
 <wire x1="-2.794" y1="5.2324" x2="-4.2164" y2="3.81" width="0.254" layer="51"/>
 <wire x1="-4.2164" y1="3.81" x2="-4.2164" y2="-2.54" width="0.254" layer="51"/>
-<pad name="GND" x="1.25" y="0" drill="0.9144" diameter="1.6764" rot="R90"/>
-<pad name="VBUS" x="1.25" y="3.125" drill="0.9144" diameter="1.6764" rot="R90"/>
-<pad name="D-" x="-1.25" y="3.125" drill="0.9144" diameter="1.6764" rot="R270"/>
-<pad name="D+" x="-1.25" y="0" drill="0.9144" diameter="1.6764" rot="R270"/>
-<pad name="P$1" x="-6.02" y="0.505" drill="2.286"/>
-<pad name="P$2" x="6.02" y="0.505" drill="2.286"/>
-<text x="-3.81" y="-6.35" size="1.016" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-7.62" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<pad name="GND" x="1.25" y="0" drill="0.92" diameter="1.6764" rot="R90"/>
+<pad name="VBUS" x="1.25" y="3.2" drill="0.92" diameter="1.6764" rot="R90"/>
+<pad name="D-" x="-1.25" y="3.2" drill="0.92" diameter="1.6764" rot="R270"/>
+<pad name="D+" x="-1.25" y="0" drill="0.92" diameter="1.6764" rot="R270"/>
+<pad name="P$1" x="-6.02" y="0.5" drill="2.3"/>
+<pad name="P$2" x="6.02" y="0.5" drill="2.3"/>
+<text x="-3.175" y="-6.35" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.175" y="-8.255" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-6.35" y1="-4.572" x2="-5.588" y2="-1.27" layer="41"/>
+<rectangle x1="-6.35" y1="-4.572" x2="6.35" y2="-3.556" layer="41"/>
+<rectangle x1="-6.35" y1="6.858" x2="6.35" y2="7.874" layer="41"/>
+<rectangle x1="-6.35" y1="2.286" x2="-5.588" y2="7.874" layer="41"/>
+<rectangle x1="5.588" y1="2.286" x2="6.35" y2="7.874" layer="41"/>
+<rectangle x1="5.588" y1="-4.572" x2="6.35" y2="-1.27" layer="41"/>
 </package>
 </packages>
 <symbols>
@@ -8048,8 +8054,6 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="R1" library="SteveMarple" deviceset="RESISTOR" device="1206-HAND" value="560R"/>
 <part name="Y1" library="SteveMarple" deviceset="CRYSTAL" device="TC38H" value="32k768"/>
 <part name="R2" library="SteveMarple" deviceset="RESISTOR" device="1206-HAND" value="560R"/>
-<part name="JP2" library="SparkFun" deviceset="JUMPER-3" device="PTH" value="SDA/A4"/>
-<part name="JP3" library="SparkFun" deviceset="JUMPER-3" device="PTH" value="SCL/A5"/>
 <part name="R6" library="SteveMarple" deviceset="RESISTOR" device="1206-HAND" value="10k"/>
 <part name="SENS1" library="SteveMarple" deviceset="LM61" device=""/>
 <part name="JP7" library="SparkFun" deviceset="JUMPER-2" device="PTH" value="AUTO RST"/>
@@ -8163,7 +8167,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="IC8" library="SteveMarple" deviceset="74LVC1T45" device="SOT23-HAND"/>
 <part name="R11" library="SteveMarple" deviceset="RESISTOR" device="1206-HAND" value="10k"/>
 <part name="IC9" library="SteveMarple" deviceset="74LVC1T45" device="SOT23-HAND"/>
-<part name="JP4" library="SparkFun" deviceset="JUMPER-3" device="PTH" value="PPS 7/6"/>
+<part name="JP4" library="SparkFun" deviceset="JUMPER-3" device="PTH" value="PPS"/>
 <part name="R12" library="SteveMarple" deviceset="RESISTOR" device="1206-HAND" value="100k"/>
 <part name="GND33" library="supply1" deviceset="GND" device=""/>
 <part name="C21" library="SteveMarple" deviceset="C-EU" device="0805-HAND" value="22p"/>
@@ -8371,8 +8375,6 @@ Add TO-220 option for LD-1117</text>
 <attribute name="VALUE" x="111.76" y="93.98" size="1.778" layer="96"/>
 </instance>
 <instance part="R2" gate="G$1" x="137.16" y="132.08" rot="R90"/>
-<instance part="JP2" gate="G$1" x="-22.86" y="154.94"/>
-<instance part="JP3" gate="G$1" x="-22.86" y="132.08"/>
 <instance part="R6" gate="G$1" x="-149.86" y="68.58" rot="R90"/>
 <instance part="SENS1" gate="G$1" x="149.86" y="0" rot="MR0"/>
 <instance part="JP7" gate="A" x="78.74" y="-43.18"/>
@@ -8948,31 +8950,7 @@ Add TO-220 option for LD-1117</text>
 <pinref part="LED2" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="A4/SDA" class="0">
-<segment>
-<wire x1="-2.54" y1="129.54" x2="-20.32" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="147.32" x2="-20.32" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="2"/>
-<label x="-12.7" y="142.24" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="A4"/>
-<wire x1="-2.54" y1="129.54" x2="12.7" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="A5/SCL" class="0">
-<segment>
-<wire x1="12.7" y1="127" x2="-20.32" y2="127" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="127" x2="-20.32" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="2"/>
-<pinref part="U$1" gate="G$1" pin="A5"/>
-</segment>
-</net>
 <net name="20(SDA)" class="0">
-<segment>
-<wire x1="-17.78" y1="152.4" x2="-17.78" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="149.86" x2="-25.4" y2="149.86" width="0.1524" layer="91"/>
-<label x="-27.94" y="149.86" size="1.778" layer="95" rot="MR0"/>
-<pinref part="JP2" gate="G$1" pin="3"/>
-</segment>
 <segment>
 <wire x1="152.4" y1="63.5" x2="185.42" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="63.5" x2="187.96" y2="63.5" width="0.1524" layer="91"/>
@@ -9003,12 +8981,6 @@ Add TO-220 option for LD-1117</text>
 </net>
 <net name="21(SCL)" class="0">
 <segment>
-<wire x1="-17.78" y1="129.54" x2="-17.78" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="124.46" x2="-25.4" y2="124.46" width="0.1524" layer="91"/>
-<label x="-27.94" y="124.46" size="1.778" layer="95" rot="MR0"/>
-<pinref part="JP3" gate="G$1" pin="3"/>
-</segment>
-<segment>
 <wire x1="152.4" y1="66.04" x2="177.8" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="66.04" x2="187.96" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="66.04" x2="177.8" y2="73.66" width="0.1524" layer="91"/>
@@ -9038,27 +9010,26 @@ Add TO-220 option for LD-1117</text>
 </net>
 <net name="A4" class="0">
 <segment>
-<wire x1="-22.86" y1="152.4" x2="-25.4" y2="152.4" width="0.1524" layer="91"/>
-<label x="-27.94" y="152.4" size="1.778" layer="95" rot="MR0"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <wire x1="53.34" y1="50.8" x2="55.88" y2="50.8" width="0.1524" layer="91"/>
 <label x="58.42" y="50.8" size="1.778" layer="95"/>
 <pinref part="IC4" gate="G$1" pin="PCINT3/ADC3_PA3"/>
 </segment>
+<segment>
+<label x="2.54" y="129.54" size="1.778" layer="95" rot="MR0"/>
+<pinref part="U$1" gate="G$1" pin="A4"/>
+<wire x1="5.08" y1="129.54" x2="12.7" y2="129.54" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="A5" class="0">
-<segment>
-<wire x1="-22.86" y1="129.54" x2="-22.86" y2="127" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="127" x2="-25.4" y2="127" width="0.1524" layer="91"/>
-<label x="-27.94" y="127" size="1.778" layer="95" rot="MR0"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
-</segment>
 <segment>
 <wire x1="53.34" y1="53.34" x2="55.88" y2="53.34" width="0.1524" layer="91"/>
 <label x="58.42" y="53.34" size="1.778" layer="95"/>
 <pinref part="IC4" gate="G$1" pin="PCINT2/ADC2_PA2"/>
+</segment>
+<segment>
+<wire x1="12.7" y1="127" x2="5.08" y2="127" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="A5"/>
+<label x="2.54" y="127" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -9734,7 +9705,7 @@ Add TO-220 option for LD-1117</text>
 <wire x1="15.24" y1="-38.1" x2="15.24" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$16" class="1">
+<net name="VBUS" class="1">
 <segment>
 <pinref part="X3" gate="G$1" pin="VBUS"/>
 <pinref part="L2" gate="G$1" pin="1"/>
