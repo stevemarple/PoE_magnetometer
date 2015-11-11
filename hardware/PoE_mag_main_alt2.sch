@@ -3333,6 +3333,21 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <rectangle x1="5.588" y1="2.286" x2="6.35" y2="7.874" layer="41"/>
 <rectangle x1="5.588" y1="-4.572" x2="6.35" y2="-1.27" layer="41"/>
 </package>
+<package name="TO220">
+<pad name="1" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<wire x1="-5.207" y1="3.0734" x2="5.207" y2="3.0734" width="0.127" layer="21"/>
+<wire x1="5.207" y1="3.0734" x2="5.207" y2="2.54" width="0.127" layer="21"/>
+<wire x1="5.207" y1="2.54" x2="5.207" y2="-1.9812" width="0.127" layer="21"/>
+<wire x1="5.207" y1="-1.9812" x2="-5.207" y2="-1.9812" width="0.127" layer="21"/>
+<wire x1="-5.207" y1="-1.9812" x2="-5.207" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-5.207" y1="2.54" x2="-5.207" y2="3.0734" width="0.127" layer="21"/>
+<wire x1="-5.207" y1="2.54" x2="5.207" y2="2.54" width="0.127" layer="21"/>
+<text x="-3.81" y="-3.81" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-5.715" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<circle x="-4.445" y="-1.27" radius="0.508" width="0" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="A3L-LOC">
@@ -5258,7 +5273,8 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 </devices>
 </deviceset>
 <deviceset name="V_REG_LD1117VXX">
-<description>CHECK PINOUT!!!!!!!!!!!!!!!!!!! LD1117VXX voltage regulator. We carry the 3.3V version (COM-00526) in TO-220 package.</description>
+<description>&lt;b&gt;LD1117VXX voltage regulator&lt;/b&gt;
+&lt;p&gt;CHECK PINOUT!!!!!!!!!!!!!!!!!!! &lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="78XX" x="0" y="0"/>
 </gates>
@@ -5288,6 +5304,16 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="IN" pad="3"/>
 <connect gate="G$1" pin="OUT" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO220" package="TO220">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8154,7 +8180,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="IC6" library="SteveMarple" deviceset="V_REG_78XX" device="TSR-1-XXXX" value="TSR 1-2450"/>
 <part name="JP9" library="SparkFun" deviceset="JUMPER-3" device="PTH" value="USB/VIN"/>
-<part name="IC1" library="SteveMarple" deviceset="V_REG_LD1117VXX" device="SOT223-HAND" value="LD1117S33TR"/>
+<part name="IC1" library="SteveMarple" deviceset="V_REG_LD1117VXX" device="TO220" value="LD1117S33TR"/>
 <part name="FRAME3" library="SteveMarple" deviceset="FRAME-A3" device=""/>
 <part name="RF1" library="nvs-tech" deviceset="NV08C-CSM" device="HAND" value="NV08C-CSM"/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
