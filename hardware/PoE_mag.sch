@@ -8344,12 +8344,12 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="X9" library="SteveMarple" deviceset="RJ11-6" device="PTH" value="RJ11"/>
 <part name="JP11" library="SparkFun" deviceset="JUMPER-3" device="PTH" value="MAG VCC"/>
 <part name="IC11" library="SteveMarple" deviceset="PCA9517A" device="SOIC" value="PCA9517A"/>
-<part name="R15" library="SteveMarple" deviceset="RESISTOR" device="1206-HAND" value="10k"/>
+<part name="R15" library="SteveMarple" deviceset="RESISTOR" device="1206-HAND" value="4k7"/>
 <part name="GND43" library="supply1" deviceset="GND" device=""/>
 <part name="P+18" library="supply1" deviceset="VCC" device=""/>
-<part name="R14" library="SteveMarple" deviceset="RESISTOR" device="1206-HAND" value="10k"/>
-<part name="R16" library="SteveMarple" deviceset="RESISTOR" device="1206-HAND" value="10k"/>
-<part name="R17" library="SteveMarple" deviceset="RESISTOR" device="1206-HAND" value="10k"/>
+<part name="R14" library="SteveMarple" deviceset="RESISTOR" device="1206-HAND" value="4k7"/>
+<part name="R16" library="SteveMarple" deviceset="RESISTOR" device="1206-HAND" value="4k7"/>
+<part name="R17" library="SteveMarple" deviceset="RESISTOR" device="1206-HAND" value="4k7"/>
 <part name="R20" library="SteveMarple" deviceset="RESISTOR" device="1206-HAND" value="3k 1%"/>
 <part name="R21" library="SteveMarple" deviceset="RESISTOR" device="1206-HAND" value="1k 1%"/>
 <part name="GND44" library="supply1" deviceset="GND" device=""/>
@@ -9830,7 +9830,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <text x="328.93" y="14.478" size="2.54" layer="94">1.1</text>
 <text x="332.74" y="4.318" size="2.54" layer="94">Steve Marple</text>
 <text x="25.4" y="25.4" size="3.81" layer="91" ratio="10">Level shifting</text>
-<text x="35.56" y="190.5" size="3.81" layer="91" ratio="10">RTC battery</text>
+<text x="27.94" y="198.12" size="3.81" layer="91" ratio="10">GPS RTC battery backup</text>
 <text x="25.4" y="17.78" size="1.778" layer="91">74LVC1T45: DIR low,  B =&gt; A
 (B input, A output)</text>
 <text x="165.1" y="127" size="1.778" layer="91" align="top-left">RF supply decoupling,
@@ -9839,7 +9839,18 @@ VIN_A pin.</text>
 <text x="162.56" y="27.94" size="1.778" layer="91">Fit shunts to adjust default configuration
 (see datasheet). Makes use of internal
 pull-ups and pull-downs.</text>
-<text x="203.2" y="182.88" size="1.778" layer="91">74LVC1T45 decoupling</text>
+<text x="190.5" y="175.26" size="3.81" layer="91" ratio="10">74LVC1T45 decoupling</text>
+<text x="170.18" y="15.24" size="3.81" layer="91" ratio="10">NV08C-CSM GNSS module</text>
+<text x="309.88" y="81.28" size="1.778" layer="91" align="top-left">JP7 (V_ANT) enables the supply voltage
+for the external GNSS antenna to
+be selected (3.3V or 5V). For a passive
+antenna omit the shunt on JP7.
+
+The NV08C-CSM module can directly
+power an active GNSS antenna at
+2.85V. Replace the DC blocking
+capacitor (C34, 22p) with 0R resistor.
+Omit inductor L3.</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
