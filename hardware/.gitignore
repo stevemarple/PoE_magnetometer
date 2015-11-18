@@ -2,9 +2,6 @@
 *.[bls]#[#0-9]
 
 # Ignore unwanted Gerber file output
-*.GBP
-*.GML
-*.GTP
 *.do
 *.dri
 *.gpi
