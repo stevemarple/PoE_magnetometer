@@ -6918,12 +6918,12 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="108" y1="53" x2="110" y2="51" width="0.127" layer="51" curve="-90"/>
 </package>
 <package name="FIBOX-PC-M-95-G-POE-MAG">
-<hole x="0" y="50" drill="3.5"/>
-<hole x="0" y="-50" drill="3.5"/>
-<hole x="-50" y="-50" drill="3.5"/>
-<hole x="-50" y="50" drill="3.5"/>
-<hole x="-95" y="0" drill="3.5"/>
-<hole x="-87.5" y="30" drill="3.5"/>
+<hole x="0" y="50" drill="3.9"/>
+<hole x="0" y="-50" drill="3.9"/>
+<hole x="-50" y="-50" drill="3.9"/>
+<hole x="-50" y="50" drill="3.9"/>
+<hole x="-95" y="0" drill="3.9"/>
+<hole x="-87.5" y="30" drill="3.9"/>
 <wire x1="-98" y1="-65" x2="98" y2="-65" width="0.127" layer="51"/>
 <wire x1="-98" y1="65" x2="98" y2="65" width="0.127" layer="51"/>
 <wire x1="110" y1="53" x2="110" y2="-53" width="0.127" layer="51"/>
@@ -6946,7 +6946,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <rectangle x1="-96" y1="-10" x2="-94" y2="10" layer="40"/>
 <circle x="0" y="-50" radius="3.5" width="0" layer="40"/>
 <rectangle x1="-1" y1="-60" x2="1" y2="-40" layer="40" rot="R90"/>
-<circle x="0" y="50" radius="3.5" width="0" layer="39"/>
+<circle x="0" y="50" radius="4" width="0" layer="39"/>
 <rectangle x1="-1" y1="40" x2="1" y2="60" layer="40" rot="R90"/>
 <circle x="50" y="50" radius="3.5" width="0" layer="40"/>
 <rectangle x1="49" y1="40" x2="51" y2="60" layer="40" rot="R90"/>
@@ -6978,24 +6978,24 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="-106.68" y1="50.8" x2="-107.95" y2="50.8" width="0" layer="20"/>
 <wire x1="-106.68" y1="-50.8" x2="-107.95" y2="-50.8" width="0" layer="20"/>
 <wire x1="-95.25" y1="-62.23" x2="-95.25" y2="-60.96" width="0" layer="20"/>
-<circle x="-50" y="50" radius="3.5" width="0" layer="41"/>
-<circle x="-50" y="50" radius="3.5" width="0" layer="39"/>
-<circle x="0" y="50" radius="3.5" width="0" layer="41"/>
+<circle x="-50" y="50" radius="4" width="0" layer="41"/>
+<circle x="-50" y="50" radius="4" width="0" layer="39"/>
+<circle x="0" y="50" radius="4" width="0" layer="41"/>
 <circle x="0" y="50" radius="3.5" width="0" layer="40"/>
 <circle x="-87.5" y="30" radius="3.5" width="0" layer="42"/>
-<circle x="-87.5" y="30" radius="3.5" width="0" layer="41"/>
-<circle x="-50" y="-50" radius="3.5" width="0" layer="39"/>
-<circle x="-50" y="-50" radius="3.5" width="0" layer="41"/>
+<circle x="-87.5" y="30" radius="4" width="0" layer="41"/>
+<circle x="-50" y="-50" radius="4" width="0" layer="39"/>
+<circle x="-50" y="-50" radius="4" width="0" layer="41"/>
 <circle x="0" y="50" radius="3.5" width="0" layer="42"/>
 <circle x="-50" y="50" radius="3.5" width="0" layer="42"/>
-<circle x="-87.5" y="30" radius="3.5" width="0" layer="39"/>
+<circle x="-87.5" y="30" radius="4" width="0" layer="39"/>
 <circle x="-95" y="0" radius="3.5" width="0" layer="42"/>
-<circle x="-95" y="0" radius="3.5" width="0" layer="41"/>
-<circle x="-95" y="0" radius="3.5" width="0" layer="39"/>
+<circle x="-95" y="0" radius="4" width="0" layer="41"/>
+<circle x="-95" y="0" radius="4" width="0" layer="39"/>
 <circle x="-50" y="-50" radius="3.5" width="0" layer="42"/>
-<circle x="0" y="-50" radius="3.5" width="0" layer="39"/>
+<circle x="0" y="-50" radius="4" width="0" layer="39"/>
 <circle x="0" y="-50" radius="3.5" width="0" layer="42"/>
-<circle x="0" y="-50" radius="3.5" width="0" layer="41"/>
+<circle x="0" y="-50" radius="4" width="0" layer="41"/>
 </package>
 </packages>
 <symbols>
