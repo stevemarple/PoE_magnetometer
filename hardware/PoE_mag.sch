@@ -7732,7 +7732,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="JP1" library="SparkFun" deviceset="JUMPER-3" device="PTH" value="3V3/5V"/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+14" library="supply1" deviceset="+5V" device=""/>
-<part name="Y2" library="SteveMarple" deviceset="CRYSTAL-RESONATOR" device="" value="16MHz">
+<part name="Y2" library="SteveMarple" deviceset="CRYSTAL-RESONATOR" device="" value="12MHz">
 <attribute name="OPTION" value="Crystal or ceramic resonator. Max 12MHz for 3V3 operation."/>
 </part>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
