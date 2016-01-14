@@ -7891,6 +7891,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="P+25" library="supply1" deviceset="VCC" device=""/>
 <part name="C12" library="SteveMarple" deviceset="CAP_POL" device="" value="100u 25V"/>
 <part name="C14" library="SteveMarple" deviceset="CAP_POL" device="100UF-16V-100MIL" value="100u"/>
+<part name="U$14" library="SteveMarple" deviceset="PAD" device=""/>
+<part name="GND50" library="supply1" deviceset="GND" device=""/>
+<part name="U$15" library="SteveMarple" deviceset="PAD" device=""/>
+<part name="GND51" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8064,6 +8068,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <attribute name="VALUE" x="-159.004" y="18.669" size="1.778" layer="96"/>
 </instance>
 <instance part="C14" gate="G$1" x="-111.76" y="22.86"/>
+<instance part="U$14" gate="G$1" x="142.24" y="-27.94"/>
+<instance part="GND50" gate="1" x="142.24" y="-35.56"/>
+<instance part="U$15" gate="G$1" x="152.4" y="-27.94"/>
+<instance part="GND51" gate="1" x="152.4" y="-35.56"/>
 </instances>
 <busses>
 </busses>
@@ -8328,6 +8336,16 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND49" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$14" gate="G$1" pin="1"/>
+<pinref part="GND50" gate="1" pin="GND"/>
+<wire x1="142.24" y1="-33.02" x2="142.24" y2="-27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$15" gate="G$1" pin="1"/>
+<pinref part="GND51" gate="1" pin="GND"/>
+<wire x1="152.4" y1="-33.02" x2="152.4" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="1">
