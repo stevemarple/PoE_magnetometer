@@ -6918,12 +6918,12 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="108" y1="53" x2="110" y2="51" width="0.127" layer="51" curve="-90"/>
 </package>
 <package name="FIBOX-PC-M-95-G-POE-MAG">
-<hole x="0" y="50" drill="3.9"/>
-<hole x="0" y="-50" drill="3.9"/>
-<hole x="-50" y="-50" drill="3.9"/>
-<hole x="-50" y="50" drill="3.9"/>
-<hole x="-95" y="0" drill="3.9"/>
-<hole x="-87.5" y="30" drill="3.9"/>
+<hole x="0" y="50" drill="4"/>
+<hole x="0" y="-50" drill="4"/>
+<hole x="-50" y="-50" drill="4"/>
+<hole x="-50" y="50" drill="4"/>
+<hole x="-95" y="0" drill="4"/>
+<hole x="-87.5" y="30" drill="4"/>
 <wire x1="-98" y1="-65" x2="98" y2="-65" width="0.127" layer="51"/>
 <wire x1="-98" y1="65" x2="98" y2="65" width="0.127" layer="51"/>
 <wire x1="110" y1="53" x2="110" y2="-53" width="0.127" layer="51"/>
