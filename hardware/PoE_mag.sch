@@ -676,7 +676,7 @@ Derived from Sparkfun package. Removed silkscreen printing which would extend ov
 <package name="SO08">
 <wire x1="2.413" y1="-1.803" x2="2.413" y2="1.803" width="0.1524" layer="21"/>
 <wire x1="-2.413" y1="1.803" x2="-2.413" y2="-1.803" width="0.1524" layer="21"/>
-<circle x="-1.8034" y="-0.9906" radius="0.1436" width="0.2032" layer="21"/>
+<circle x="-2.921" y="-1.778" radius="0.254" width="0" layer="21"/>
 <smd name="1" x="-1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
 <smd name="2" x="-0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
 <smd name="3" x="0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
@@ -7895,6 +7895,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="GND50" library="supply1" deviceset="GND" device=""/>
 <part name="U$15" library="SteveMarple" deviceset="PAD" device=""/>
 <part name="GND51" library="supply1" deviceset="GND" device=""/>
+<part name="C42" library="SteveMarple" deviceset="C-EU" device="1206-HAND" value="1u"/>
 </parts>
 <sheets>
 <sheet>
@@ -10031,8 +10032,8 @@ PoE operation</text>
 <instance part="GND47" gate="1" x="99.06" y="165.1"/>
 <instance part="D3" gate="G$1" x="106.68" y="182.88" rot="R90"/>
 <instance part="GND48" gate="1" x="88.9" y="165.1"/>
-<instance part="X7" gate="-1" x="101.6" y="200.66"/>
-<instance part="X7" gate="-2" x="101.6" y="198.12"/>
+<instance part="X7" gate="-1" x="101.6" y="210.82"/>
+<instance part="X7" gate="-2" x="101.6" y="208.28"/>
 <instance part="BOX1" gate="G$1" x="337.82" y="53.34"/>
 <instance part="Q2" gate="G$1" x="99.06" y="182.88" smashed="yes">
 <attribute name="VALUE" x="74.93" y="182.88" size="1.778" layer="96"/>
@@ -10061,6 +10062,7 @@ PoE operation</text>
 <instance part="GND44" gate="1" x="58.42" y="35.56"/>
 <instance part="D4" gate="G$1" x="58.42" y="66.04" rot="R90"/>
 <instance part="P+19" gate="VCC" x="58.42" y="81.28"/>
+<instance part="C42" gate="G$1" x="88.9" y="210.82"/>
 </instances>
 <busses>
 </busses>
@@ -10116,14 +10118,19 @@ PoE operation</text>
 <wire x1="58.42" y1="40.64" x2="58.42" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="FAN_CTRL" class="0">
+<net name="FAN_CTRL" class="1">
 <segment>
 <junction x="99.06" y="187.96"/>
-<wire x1="99.06" y1="187.96" x2="99.06" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="187.96" x2="99.06" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="D3" gate="G$1" pin="C"/>
+<wire x1="99.06" y1="203.2" x2="99.06" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="187.96" x2="99.06" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="X7" gate="-2" pin="S"/>
 <pinref part="Q2" gate="G$1" pin="D"/>
+<junction x="99.06" y="203.2"/>
+<pinref part="C42" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="205.74" x2="88.9" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="203.2" x2="99.06" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -10147,8 +10154,13 @@ PoE operation</text>
 <net name="VIN" class="1">
 <segment>
 <pinref part="X7" gate="-1" pin="S"/>
-<wire x1="99.06" y1="200.66" x2="99.06" y2="208.28" width="0.1524" layer="91"/>
-<label x="99.06" y="210.82" size="1.778" layer="95" rot="R90"/>
+<wire x1="99.06" y1="210.82" x2="99.06" y2="215.9" width="0.1524" layer="91"/>
+<label x="99.06" y="226.06" size="1.778" layer="95" rot="R90"/>
+<junction x="99.06" y="215.9"/>
+<wire x1="99.06" y1="215.9" x2="99.06" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="C42" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="213.36" x2="88.9" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="215.9" x2="99.06" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X8" gate="G$1" pin="2"/>
