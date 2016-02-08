@@ -257,7 +257,7 @@ IOREF</text>
 <rectangle x1="87.122" y1="1.524" x2="91.948" y2="2.794" layer="41"/>
 <text x="102.87" y="105.41" size="2.54" layer="122" ratio="12" rot="MR0">PoE magnetometer v1.0</text>
 <rectangle x1="87.122" y1="1.524" x2="91.186" y2="2.794" layer="42"/>
-<text x="82.55" y="101.6" size="1.27" layer="25" ratio="10">PCB REV: 2</text>
+<text x="82.55" y="101.6" size="1.27" layer="25" ratio="10">v1.0.1</text>
 <wire x1="142.875" y1="24.765" x2="143.51" y2="23.495" width="0.254" layer="27"/>
 <wire x1="142.875" y1="24.765" x2="144.145" y2="23.495" width="0.254" layer="27"/>
 <wire x1="144.145" y1="24.13" x2="142.875" y2="24.765" width="0.254" layer="27"/>
