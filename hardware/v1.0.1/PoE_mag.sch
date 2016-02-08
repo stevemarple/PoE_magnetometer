@@ -7917,7 +7917,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <text x="-71.12" y="132.08" size="2.54" layer="91">RTC battery</text>
 <text x="129.54" y="106.68" size="2.54" layer="91">Power LED</text>
 <text x="158.242" y="-71.882" size="2.54" layer="94">Steve Marple</text>
-<text x="155.702" y="-61.722" size="2.54" layer="94">2.1a</text>
+<text x="155.702" y="-61.722" size="2.54" layer="94">1.0</text>
 <text x="-152.4" y="0" size="2.54" layer="91">5V regulator</text>
 <text x="-63.5" y="0" size="1.27" layer="91">Omit load capacitors if resonator</text>
 <text x="-63.5" y="-2.54" size="1.27" layer="91">fitted instead of crystal</text>
