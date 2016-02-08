@@ -7896,6 +7896,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="U$15" library="SteveMarple" deviceset="PAD" device=""/>
 <part name="GND51" library="supply1" deviceset="GND" device=""/>
 <part name="C42" library="SteveMarple" deviceset="C-EU" device="1206-HAND" value="1u"/>
+<part name="C43" library="SteveMarple" deviceset="C-EU" device="1206-HAND" value="100n"/>
+<part name="GND52" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8240,8 +8242,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="IC3" gate="G$1" pin="GND"/>
 <junction x="127" y="53.34"/>
 <pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="55.88" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="53.34" x2="127" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="55.88" x2="121.92" y2="53.34" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="121.92" y1="53.34" x2="127" y2="53.34" width="0.1524" layer="91" style="shortdash"/>
 </segment>
 <segment>
 <wire x1="-45.72" y1="10.16" x2="-45.72" y2="12.7" width="0.1524" layer="91"/>
@@ -9288,7 +9290,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="121.92" y1="66.04" x2="134.62" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <junction x="121.92" y="66.04"/>
-<wire x1="121.92" y1="63.5" x2="121.92" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="63.5" x2="121.92" y2="66.04" width="0.1524" layer="91" style="shortdash"/>
 <junction x="116.84" y="66.04"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="66.04" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
@@ -10070,6 +10072,8 @@ PoE operation</text>
 <instance part="D4" gate="G$1" x="58.42" y="66.04" rot="R90"/>
 <instance part="P+19" gate="VCC" x="58.42" y="81.28"/>
 <instance part="C42" gate="G$1" x="88.9" y="210.82"/>
+<instance part="C43" gate="G$1" x="68.58" y="45.72"/>
+<instance part="GND52" gate="1" x="68.58" y="35.56"/>
 </instances>
 <busses>
 </busses>
@@ -10123,6 +10127,11 @@ PoE operation</text>
 <pinref part="R21" gate="G$1" pin="1"/>
 <pinref part="GND44" gate="1" pin="GND"/>
 <wire x1="58.42" y1="40.64" x2="58.42" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C43" gate="G$1" pin="2"/>
+<pinref part="GND52" gate="1" pin="GND"/>
+<wire x1="68.58" y1="40.64" x2="68.58" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FAN_CTRL" class="1">
@@ -10336,16 +10345,20 @@ PoE operation</text>
 </net>
 <net name="A2" class="0">
 <segment>
-<wire x1="68.58" y1="55.88" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
-<label x="71.12" y="55.88" size="1.778" layer="95"/>
+<wire x1="73.66" y1="55.88" x2="68.58" y2="55.88" width="0.1524" layer="91"/>
+<label x="76.2" y="55.88" size="1.778" layer="95"/>
 <junction x="58.42" y="55.88"/>
 <pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="55.88" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="55.88" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
 <junction x="58.42" y="55.88"/>
 <pinref part="R21" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="55.88" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="D4" gate="G$1" pin="A"/>
 <wire x1="58.42" y1="60.96" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
+<junction x="68.58" y="55.88"/>
+<pinref part="C43" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="55.88" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="1">
